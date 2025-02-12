@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios</title>
+  <link rel="stylesheet" href="./statics/css/style.css">
+</head>
+<body>
+  <section id="title">
+    <br>
+    <h1>Redescubriendo <br><span>JavaScript</span></h1>
+    <hr>
+    <button type="button"><a href="./index.html">Regresar</a></button>
+  </section>
+  <section id="middle">
+    <div class="container-insade">
+      <h1 id="nombreUsuario">Imprime mi nombre</h1>
+      <button type="button" onclick="imprimirNombre()">Dame click</button>
+    </div>
+
+    <!-- EJERCICIO DE CONCATENACION -->
+    <div class="container-insade">
+      <div class="container-insade">
+
+        <h1>Concatenación y extensión</h1>
+        <p>Concatena un nombre con un saludo</p>
+        <button type="button" onclick="concatenacionExtension()">Concatenacion</button>
+      </div>
+    </div>
+
+    <!-- EJERCICIO DE TRABAJO CON VARIABLES -->
+    <div class="container-insade">
+      <h1><span>P#1</span> My life in weeks</h1>
+      <div class="container-insade">
+        <p>Esta calculadora esta inspirada en el artículo <a href="https://waitbutwhy.com/2014/05/life-weeks.html"
+            target="_blank">Tu vida en semanas</a> por Tim Urban.
+          <br><br> Para este reto, asume que son 365 días en un año, 52 semanas en un año y 12 meses en un año.
+        </p>
+        <input type="number" id="humanAge" placeholder="Tu edad en años">
+        <button type="button" onclick="obtenerElTiempo()">Obtener el tiempo!</button>
+        <br>
+        <label id="humanText" for="humanAge">Tu tienes x días, y semanas, y z meses todavía.</label>
+      </div>
+    </div>
+
+
+    <!-- Ejercicio Calculadora de BMI  -->
+    <div class="container-insade">
+      <h1><span>P#2</span> BMI Calculator</h1>
+      <div class="container-insade">
+        <p><b>B</b>ody <b>M</b>ass <b>I</b>ndex Body mass index (BMI) is a measure of body fat based on height and
+          weight that applies to adult men and women.
+          Formula used: <br> BMI = (weight / heigth ^ 2).
+        </p>
+        <select id="peso">
+          <option value="kg" selected>Kg</option>
+          <option value="lbrs">Lbr</option>
+        </select> &nbsp;&nbsp;&nbsp;
+        <input type="number" id="pesoHumano" placeholder="Tu peso">
+        <select id="altura" disabled>
+          <option value="metros" selected>mtrs</option>
+        </select> &nbsp;&nbsp;&nbsp;
+        <input type="number" id="alturaHumana" placeholder="Tu altura">
+        <button type="button" onclick="calcularIBM()">Obtener el indice!</button>
+        <br>
+        <label id="resultadoIBM"> Tu IMC es: <b>x</b>.</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRIPT TAGS JS -->
+  <script src="./statics/js/index.js"></script>
+</body>
+
+</html>
